@@ -86,13 +86,13 @@ li{
 /* Left column */
 .columnaizquierda {   
     float: left;
-    width: 75%;
+    width: 80%;
 }
 
 /* Right column */
 .columnaderecha {
     float: left;
-    width: 25%;
+    width: 20%;
     background-color: #F6DDCC;
     padding-left: 20px;
 }
@@ -100,7 +100,7 @@ li{
 /* Fake image */
 .imagenes {
     background-color: #F6DDCC00 ;
-    width: 100%;
+    width: 50%;
     padding: 20px;
 	text-align:center;
 }
