@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+	font-family: Arial;
+}
+
+body {
+    padding: 10px;
+    background: #F6DDCC;
+}
+
+/* Encabezado titulo */
+.encabezado {
+    padding: 90px;
+    text-align: center;
+    background-color: black;
+	background: url(Imagenes/D.gif);
+	border-radius: 15px / 50px ;
+}
+
+li{
+	margin-left:0;
+}
+.encabezado h1 {
+    font-size: 70px;
+	color :blue;
+}
+
+
+
+.navegacion{
+    background-color: #000000;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+    background-color: #F1F1F1;
+    color: #CA6F1E  ;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	padding: 0;
+	background: #000000;
+	visibility: hidden;
+	width: 120%;
+	opacity: 0;
+}
+
+.submenu li a{
+	display: block;
+	padding: 14px;
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.columnaizquierda {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.columnaderecha {
+    float: left;
+    width: 25%;
+    background-color: #F6DDCC;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.imagenes {
+    background-color: #F6DDCC00 ;
+    width: 100%;
+    padding: 20px;
+	text-align:center;
+}
+
+/* Articulos */
+.articulo {
+    background-color:  #F0B27A ;
+    padding: 20px;
+    margin-top: 20px;
+	border-radius: 0px 0px 0px 50px;
+	text-align:center;
+}
+
+.texto {
+    background-color:  #F0B27A ;
+    padding: 20px;
+    margin-top: 20px;
+	border-radius: 0px 0px 50px 0px;
+}
+
+/* Articulos */
+.articulo  p {
+	text-align:center;
+}
+
+/* Clear floats after the columns */
+.columna:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    /*background: #E58211;*/
+    margin-top: 20px;
+	background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#F0B27A), to(#DE7A28));
+	border-radius: 50px 0px 0px 50px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .columnaizquierda, .columnaderecha {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+}
+img {
+opacity: 1;
+}
+
+p{
+text-align:justify;
+font-size: 14px;
+font-family: Arial;	
+}
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 200px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.bordeado{
+-moz-box-shadow:3px 3px 1px #000000;
+-webkit-box-shadow:3px 3px 1px #000000;
+box-shadow:3px 3px 1px #000000;
+	
+	
+}
+.Animaciones {
+transition:All 1s ease;
+-webkit-transition:All 1s ease;
+-moz-transition:All 1s ease;
+-o-transition:All 1s ease;
+transform: rotate(1deg) scale(1) skew(1deg) translate(10px);
+-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+}
+.Animaciones:hover{
+transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-moz-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-o-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-ms-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+}
+
+
+
+
+
