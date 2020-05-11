@@ -100,9 +100,8 @@ li{
 /* Fake image */
 .imagenes {
     background-color: #F6DDCC00 ;
-    width: 50%;
+    width: 100%;
     padding: 20px;
-	text-align:center;
 }
 
 /* Articulos */
